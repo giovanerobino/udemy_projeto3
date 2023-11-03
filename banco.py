@@ -82,7 +82,7 @@ def efetuar_saque() -> None:
         conta: Conta = buscar_conta_por_numero(numero)
 
         if conta:
-            valor: float = float('Informe o valor do saque: ')
+            valor: float = float(input('Informe o valor do saque: '))
             conta.sacar(valor)  # método de execução
         else:
             print(f'Não foi a encontrado a conta com número: {numero}')
@@ -99,7 +99,7 @@ def efetuar_deposito() -> None:
         conta: Conta = buscar_conta_por_numero(numero)
 
         if conta:
-            valor: float = float('Informe o valor do depósito: ')
+            valor: float = float(input('Informe o valor do depósito: '))
             conta.depositar(valor)  # método de execução
         else:
             print(f'Não foi a encontrado a conta com número: {numero}')
